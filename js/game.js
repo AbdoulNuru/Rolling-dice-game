@@ -25,3 +25,38 @@ document.querySelector(".btn-roll").addEventListener("click", ()=> {
     }
   }
 });
+
+document.querySelector(".btn-hold").addEventListener("click", ()=> {
+  if (gameStatus) {
+    // add current score to global score
+    scores[activePlayer] += roundScore;
+    //update both scores
+    document.querySelector("#score-" + activePlayer).textContent =
+      scores[activePlayer];
+
+    let input = document.querySelector(".final-score").value;
+    let winningScore;
+
+    if (input) {
+      winningScore = input;
+    } else {
+      winningScore = 100;
+    }
+    //check if player won the game
+    if (scores[activePlayer] >= winningScore) {
+      document.querySelector("#name-" + activePlayer).textContent = "Winner!";
+      document.getElementById("dice-1").style.display = "none";
+      document.getElementById("dice-2").style.display = "none";
+      document
+        .querySelector(".player-" + activePlayer + "-panel")
+        .classList.add("winner");
+      document
+        .querySelector(".player-" + activePlayer + "-panel")
+        .classList.remove("active");
+      gameStatus = false;
+    } else {
+      //next player
+      nextPlayer();
+    }
+  }
+});
