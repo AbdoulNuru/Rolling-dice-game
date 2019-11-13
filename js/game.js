@@ -61,6 +61,8 @@ document.querySelector(".btn-hold").addEventListener("click", ()=> {
   }
 });
 
+document.querySelector(".btn-new").addEventListener("click", initialize);
+
 const initialize = ()=> {
   scores = [0, 0];
   roundScore = 0;
