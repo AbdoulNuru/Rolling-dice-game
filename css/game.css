@@ -161,3 +161,14 @@ i {
 
 .winner { background-color: #f7f7f7; }
 .winner .player-name { font-weight: 300; color: #EB4D4D; }
+
+.footer {
+	position: fixed;
+  	left: 0;
+  	bottom: 0;
+  	width: 100%;
+  	background-color: transparent;
+  	color: #666666;
+  	text-align: center;
+  	padding: 1rem;
+}
