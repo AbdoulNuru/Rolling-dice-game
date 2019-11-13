@@ -4,7 +4,7 @@ let scores, roundScore, activePlayer, gameStatus;
 let lastRoll;
 initialize();
 
-document.querySelector(".btn-roll").addEventListener("click", function() {
+document.querySelector(".btn-roll").addEventListener("click", ()=> {
   if (gameStatus) {
     let dice1 = Math.floor(Math.random() * 6) + 1;
     let dice2 = Math.floor(Math.random() * 6) + 1;
@@ -27,7 +27,7 @@ document.querySelector(".btn-roll").addEventListener("click", function() {
   }
 });
 
-document.querySelector(".btn-hold").addEventListener("click", function() {
+document.querySelector(".btn-hold").addEventListener("click", ()=> {
   if (gameStatus) {
     // add current score to global score
     scores[activePlayer] += roundScore;
