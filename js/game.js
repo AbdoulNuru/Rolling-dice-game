@@ -85,3 +85,19 @@ const initialize = ()=> {
   document.querySelector(".player-0-panel").classList.add("active");
 }
 
+const nextPlayer = ()=> {
+  activePlayer === 0 ? (activePlayer = 1) : (activePlayer = 0);
+  roundScore = 0;
+
+  //setting current scores to zero when the player changes
+  document.getElementById("current-0").textContent = "0";
+  document.getElementById("current-1").textContent = "0";
+
+  //toggling the active player
+  
+  document.querySelector(".player-0-panel").classList.toggle("active");
+  document.querySelector(".player-1-panel").classList.toggle("active");
+
+  document.getElementById("dice-1").style.display = "none";
+  document.getElementById("dice-2").style.display = "none";
+}
