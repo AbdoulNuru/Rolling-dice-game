@@ -91,6 +91,7 @@ function nextPlayer() {
   roundScore = 0;
 
   //setting current scores to zero when the player changes
+  
   document.getElementById("current-0").textContent = "0";
   document.getElementById("current-1").textContent = "0";
 
