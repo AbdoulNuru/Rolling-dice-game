@@ -7,3 +7,8 @@ Rolling dice is a fun game where two players play by rolling two dices and the f
 - When a player is rolling the dices he/she can choose to hold so that their current score is counted.
 - if a player roll and one or both dices land on one, the player looses his/her current score and its the next players turn to play.
 
+## Tools used
+>This game was developed using:
+- HTML
+- CSS
+- Javascript
