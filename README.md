@@ -20,3 +20,4 @@ Rolling dice is a fun game where two players play by rolling two dices and the f
 [Abdoul Nuru](abdoulniyigena@gmail.com)
 
 ## Copyright
+copyright (c) 2019 Abdoul Nuru
