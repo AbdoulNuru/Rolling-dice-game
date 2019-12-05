@@ -15,3 +15,6 @@ Rolling dice is a fun game where two players play by rolling two dices and the f
 
 ## Known bugs
 > There are no known bugs in this game, if you found any feel free to contact me.
+
+## Contributor
+[Abdoul Nuru](abdoulniyigena@gmail.com)
